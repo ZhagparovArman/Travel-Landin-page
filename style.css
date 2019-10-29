@@ -1,0 +1,267 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     font-family: arial, sans-serif;
+}
+
+hr{
+    margin: auto;
+    width: 35%;
+   margin-bottom: 10px;
+}
+
+.nav {
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.nav li {
+    float: left;
+    padding: 5px 23px;
+    font-size: 15px;
+    color: white;
+}
+.nav li:hover{
+    color:#fcb103;
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo h1 {
+    padding: 20px;
+    color: white;
+   cursor: pointer;
+}
+
+.logo p{
+    margin: 30px 30px 30px 0px;
+    padding-left: 20px;
+    border-left: gray solid 1px;
+    color: gray;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    padding: 10px 50px;
+    justify-content: space-between;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+}
+
+.images{
+    display: none;
+}
+
+.images.active{ 
+    display: block;
+    position: relative;
+}
+
+.active .slider{
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.active .img_name{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 100px;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0,0,0,0.7);
+}
+
+.active .img_name h2{
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+}
+
+.active .img_name p{
+    padding: 20px;
+    color: gray;
+}
+
+.about_welcome{
+    margin: 100px 100px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+}
+
+.about_welcome h2{
+    font: normal 72px/72px 'Tinos',serif;
+    color: #282828;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.about_showcase {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.showcase_content img{
+    margin-bottom: 25px;
+}
+
+.showcase_content h3{
+    margin-bottom: 20px ;
+    font: normal 19px/19px 'Tinos',serif;
+    color: #282828;
+}
+
+.showcase_content .desc{
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.showcase_content p{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.showcase_content a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px ;
+}
+
+.showcase_content a:hover{
+    color:#fcb103;
+    cursor: pointer;
+}
+
+.tours{
+    background-color: black;
+    padding: 110px 70px 140px 70px;
+}
+
+.tours_content{
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+
+.tours_heading h2{
+    font: normal 72px/72px 'Tinos',serif;
+    color: white;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+.tours_route{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 35px;
+}
+
+.route_place img{
+    max-width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: 15%;
+    border-radius: 10px;
+}
+
+.route_place h3{
+    font: 400 30px/35px 'Tinos',serif;
+    padding: 10px 0;
+}
+
+.route_place p{
+    font-size: 14px;
+    color:	#D3D3D3;
+    text-align: center;
+}
+
+.pictures_content{
+    position: relative;
+    width: 100%;
+}
+
+.pictures_content img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+
+.pictures_content .btn{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #fcb103;
+  color: black;
+  font-size: 30px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.pictures_content .btn:hover{
+    background-color:black;
+    color: white;
+}
+
+.pictures_content img:hover{
+    filter: none;
+      -webkit-filter: grayscale(0);
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 140px 70px 40px 70px;
+}
+
+.contact h2{
+    color: black;
+    font: normal 36px 'Tinos',serif;
+    letter-spacing: 4px;;
+    margin-bottom: 30px;
+}
+
+.contact p{
+    font: 'Tinos',serif;
+    font-style: italic;
+}
+
+.contact_news input{
+    width: 65%;
+    padding: 4px 18px;
+    vertical-align: middle;
+}
+
+.contact_news button{
+    border: none;
+    background-color: white;
+    color: black;
+    font-family: 'Tinos', serif;
+    font-size: 28px;
+    vertical-align: middle;
+}
